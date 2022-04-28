@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
+tspan { white-space: pre } .shp0 { fill: #dd4814 }
