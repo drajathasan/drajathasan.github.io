@@ -19,14 +19,13 @@ export default class Contents extends React.Component {
                 <h2 className="text-xl">Nama Saya Drajat Hasan</h2>
 
                 <p className="my-5 lg:w-5/6 text-lg">
-                Saya "Tukang Ketik" yang mendengarkan masalah klien saya untuk saya selesaikan
+                Saya <strong>"Tukang Ketik"</strong> yang mendengarkan masalah klien saya untuk saya selesaikan
                 dalam bentuk sebuah "Produk" yang dapat membuat mereka tersenyum : ).
                 Pengguna GNU/Linux.
                 </p>
 
                 <p className="my-5 lg:w-5/6 text-lg">
-                Anda dapat melihat portofolio saya di laman GitHub
-                saya. Jika anda ingin mengbrol dengan saya terkait Teknologi dan "Jasa" :D,
+                Jika anda ingin mengbrol dengan saya terkait Teknologi dan "Jasa" :D,
                 bisa melalui <a href="https://t.me/drajathasan"><strong>Telegram Saya</strong></a>
                 </p>
 

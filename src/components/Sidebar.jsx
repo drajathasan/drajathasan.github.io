@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Me from '../../static/me.jpeg'
 
 
 export default class Sidebar extends Component {
@@ -49,16 +50,19 @@ export default class Sidebar extends Component {
             },
         ];
 
+        let defaultClass = "sidebarMenu flex flex-row items-center gap-2 px-5 py-1 my-1 text-lg hover:bg-gray-300 hover:font-bold hover:text-gray-900 cursor-pointer rounded-full w-full";
+        let activeClass = "bg-gray-300 font-bold text-gray-900 ";
+        
         return list.map((item,index) =>
-            <li key={index} onClick={(e) => this.props.changeContent(item.section)} className="flex flex-row items-center gap-2 px-5 py-2 text-lg hover:bg-gray-300 hover:font-bold hover:text-gray-900 cursor-pointer rounded-full w-full" dangerouslySetInnerHTML={{__html: item.icon + item.label}}></li>
+            <li key={index} id={item.section} onClick={(e) => this.props.changeContent(e, item.section)} className={index === 0 ? (activeClass + defaultClass) : defaultClass} dangerouslySetInnerHTML={{__html: item.icon + item.label}}></li>
         );
     }
 
     
     render() {
         return (
-            <div className='hidden w-1/6 h-screen lg:flex lg:flex-col items-center p-10 bg-gray-800 text-white'>
-                <img className="w-28 h-28 rounded-full" src="./static/me.jpeg"/>
+            <div className='hidden w-1/6 min-h-screen lg:flex lg:flex-col items-center p-10 bg-gray-800 text-white'>
+                <img className="w-28 h-28 rounded-full" src={Me}/>
                 <h1 className="my-5 text-xl font-bold">Drajat Hasan</h1>
 
                 <ul className='flex flex-col w-full items-start'>
